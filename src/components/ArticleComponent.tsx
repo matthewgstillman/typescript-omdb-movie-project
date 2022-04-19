@@ -1,30 +1,6 @@
 import React, {FC} from 'react'
 import Image from 'react-bootstrap/Image'
 
-interface MovieArticle{
-    Title: string;
-    Year: string;
-    Released: string;
-    Runtime: string;
-    Genre: string;
-    Director: string;
-    Writer: string;
-    Actors: string;
-    Plot: string;
-    Language: string;
-    Awards: string;
-    Poster: string;
-    Metascore: string;
-    imdbRating: string;
-    imdbID: string;
-    Type: string;
-    DVD: string;
-    BoxOffice: string;
-    Production: string;
-    Website: string;
-    Response: boolean;
-}
-
 const ArticleComponent: FC<MovieArticle> = (
     {
     Title,
@@ -58,15 +34,16 @@ const ArticleComponent: FC<MovieArticle> = (
         <h6>{Year} - {Runtime}</h6>
         </div>
         <Image className='moviePoster' src={Poster} fluid/>
-        {/* <p className="plotParagraph">{Plot}</p> */}
         <div className='plotParagraph'>
             <p>{Plot}</p>
-            <h5>Genre: <b>{Genre}</b></h5>
-            <h5>Director: <b>{Director}</b></h5>
-            <h5>Writer(s): <b>{Writer}</b></h5>
-            <h5>Starring: <b>{Actors}</b></h5>
-            <h5>IMDB Rating: <b>{imdbRating}/10</b></h5>
-            <h5>Metascore: <b>{Metascore}/100</b></h5>
+            <h6><b>Genre:</b> {Genre}</h6>
+            <h6><b>Director:</b> {Director}</h6>
+            <h6><b>Writer(s):</b> {Writer}</h6>
+            <h6><b>Starring:</b> {Actors}</h6>
+            <h6><b>Released:</b>{Released}</h6>
+            <h6><b>IMDB Rating:</b> {imdbRating}/10</h6>
+            <h6><b>Metascore:</b> {Metascore}/100</h6>
+            <h6><b>Total Box Office Revenue</b>: {BoxOffice}</h6>
             <a href={`https://www.imdb.com/title/${imdbID}`}>More info on IMDB</a>
         </div>
         <br />

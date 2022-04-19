@@ -1,35 +1,9 @@
 import React, {useState, FC} from 'react'
-import { Form, Button, Container } from "react-bootstrap";
+import { Form, Button, Container, Image, Carousel } from "react-bootstrap";
 import { useForm, SubmitHandler } from "react-hook-form";
 import ArticleComponent from './ArticleComponent';
+import ImageCarouselComponent from './ImageCarouselComponent';
 
-export interface Movie{
-    Title: string;
-    Year: string;
-    Released: string;
-    Runtime: string;
-    Genre: string;
-    Director: string;
-    Writer: string;
-    Actors: string;
-    Plot: string;
-    Language: string;
-    Awards: string;
-    Poster: string;
-    Metascore: string;
-    imdbRating: string;
-    imdbID: string;
-    Type: string;
-    DVD: string;
-    BoxOffice: string;
-    Production: string;
-    Website: string;
-    Response: boolean;
-}
-
-interface FormValues{
-    movieTitle: string;
-}
 const APIComponent: FC = () => {
   const [movieTitle, setMovieTitle ] = useState<string | "">("King+Richard")  
   const [movieData, setMovieData] = useState<Movie | null>(null);
@@ -93,6 +67,10 @@ const APIComponent: FC = () => {
             Get Movie Data
             </Button>
           </Form>
+          {movieDataSubmitted === false ?
+            <ImageCarouselComponent/>
+          : <></>
+          }
           <div>
               {movieData !== null && movieData.Title!== undefined?
                 <ArticleComponent
