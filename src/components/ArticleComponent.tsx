@@ -58,7 +58,7 @@ const ArticleComponent: FC<MovieArticle> = (
         <h6>{Year} - {Runtime}</h6>
         </div>
         <Image className='moviePoster' src={Poster} fluid/>
-        <h5 className="movieYearAndRunTimeHeader">{Year} - {Runtime}</h5>
+        <br />
         <br />
         <p className="plotParagraph">{Plot}</p>
         <br />

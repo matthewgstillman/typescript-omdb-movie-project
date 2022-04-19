@@ -120,7 +120,6 @@ const APIComponent: FC = () => {
              />
               : <div>
                   <br />
-                  <h4 className='errorMessage'>No movie was found with this title - please check the spelling or submit another movie.</h4>
               </div>
               }
             {movieData !== null &&  movieData.Title ===  undefined?
