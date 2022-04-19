@@ -5,13 +5,11 @@ import ArticleComponent from './ArticleComponent';
 import ImageCarouselComponent from './ImageCarouselComponent';
 
 const APIComponent: FC = () => {
-  const [movieTitle, setMovieTitle ] = useState<string | "">("King+Richard")  
   const [movieData, setMovieData] = useState<Movie | null>(null);
   const [movieDataSubmitted, setMovieDatSubmitted] = useState<boolean>(false);
 
   const { register, handleSubmit } = useForm<FormValues>();
   const onSubmit: SubmitHandler<FormValues> = (data) => {
-    setMovieTitle(data.movieTitle);
     getMovie(data.movieTitle);
     setMovieDatSubmitted(true);
   };
@@ -51,12 +49,9 @@ const APIComponent: FC = () => {
 
   return (
     <div>
-       <Container fluid className='mainContainer'>
+        <div className="formContainer">
         <Form data-testid="mainForm" onSubmit={handleSubmit(onSubmit)}>
             <Form.Group className="mb-3" controlId="topic">
-              <Form.Label data-testid="formLabel">
-                Enter a Movie
-              </Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter Movie Title"
@@ -67,6 +62,8 @@ const APIComponent: FC = () => {
             Get Movie Data
             </Button>
           </Form>
+        </div>
+       <Container fluid className='mainContainer'>
           {movieDataSubmitted === false ?
             <ImageCarouselComponent/>
           : <></>

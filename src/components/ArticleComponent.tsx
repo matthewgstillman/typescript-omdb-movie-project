@@ -34,8 +34,8 @@ const ArticleComponent: FC<MovieArticle> = (
         <h6>{Year} - {Runtime}</h6>
         </div>
         <Image className='moviePoster' src={Poster} fluid/>
-        <div className='plotParagraph'>
-            <p>{Plot}</p>
+        <div className='movieCard'>
+            <p className="plotParagraph">{Plot}</p>
             <h6><b>Genre:</b> {Genre}</h6>
             <h6><b>Director:</b> {Director}</h6>
             <h6><b>Writer(s):</b> {Writer}</h6>
@@ -44,7 +44,7 @@ const ArticleComponent: FC<MovieArticle> = (
             <h6><b>IMDB Rating:</b> {imdbRating}/10</h6>
             <h6><b>Metascore:</b> {Metascore}/100</h6>
             <h6><b>Total Box Office Revenue</b>: {BoxOffice}</h6>
-            <a href={`https://www.imdb.com/title/${imdbID}`}>More info on IMDB</a>
+            <a className="moreInfoLink" href={`https://www.imdb.com/title/${imdbID}`}>More info on IMDB</a>
         </div>
         <br />
         <div className="movieInfo">

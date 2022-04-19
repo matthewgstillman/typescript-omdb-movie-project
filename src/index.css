@@ -14,7 +14,7 @@ code {
 
 .App{
   background-color: #00000e;
-  padding: 50px 0 50px 0;
+  padding: 25px 0 50px 0;
   min-height: 100vh;
 }
 
@@ -32,22 +32,8 @@ code {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.plotParagraph{
-  padding: 25px 25px 25px 25px;
-  width: 84%;
-  margin: 0 auto;
-  text-align: center;
-  color: white;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
-                0 2px 4px rgba(0,0,0,0.07), 
-                0 4px 8px rgba(0,0,0,0.07), 
-                0 8px 16px rgba(0,0,0,0.07),
-                0 16px 32px rgba(0,0,0,0.07), 
-                0 32px 64px rgba(0,0,0,0.07);
-}
-
 .movieCard{
-  padding: 0 25px 0 25px;
+  padding: 10px 10px 35px 10px;
   width: 84%;
   margin: 0 auto;
   text-align: center;
@@ -66,12 +52,6 @@ code {
   color: white;
   padding: 5px 15px 5px 15px;
   background-color: #1e1e1e;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
-                0 2px 4px rgba(0,0,0,0.07), 
-                0 4px 8px rgba(0,0,0,0.07), 
-                0 8px 16px rgba(0,0,0,0.07),
-                0 16px 32px rgba(0,0,0,0.07), 
-                0 32px 64px rgba(0,0,0,0.07);
 }
 
 .moviePoster{
@@ -106,4 +86,20 @@ code {
 .form-control{
   width: 50% !important;
   margin: 0 auto;
+}
+
+.formContainer{
+  margin: 35px 0 35px 0;
+}
+
+.plotParagraph{
+  width: 86.4%;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+
+@media only screen and (max-width: 480px){
+  .plotParagraph{
+    width: 100%;
+  }
 }
