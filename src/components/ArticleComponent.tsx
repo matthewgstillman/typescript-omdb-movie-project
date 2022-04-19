@@ -29,9 +29,9 @@ const ArticleComponent: FC<MovieArticle> = (
   return (
     <div>
         <br />
-        <div className="articleHeader">
-        <h2>{Title}</h2>
-        <h6>{Year} - {Runtime}</h6>
+        <div className="articleHeader" data-testid="articleHeader">
+            <h2>{Title}</h2>
+            <h6>{Year} - {Runtime}</h6>
         </div>
         <Image className='moviePoster' src={Poster} fluid/>
         <div className='movieCard'>

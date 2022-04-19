@@ -63,7 +63,7 @@ const APIComponent: FC = () => {
             </Button>
           </Form>
         </div>
-       <Container fluid className='mainContainer'>
+       <Container fluid className='mainContainer' data-testid="mainContainer">
           {movieDataSubmitted === false ?
             <ImageCarouselComponent/>
           : <></>
@@ -98,7 +98,7 @@ const APIComponent: FC = () => {
               </div>
               }
             {movieData !== null &&  movieData.Title ===  undefined?
-                <h4 className='errorMessage'>No movie was found with this title - please check the spelling or submit another movie.</h4>
+                <h4 className='errorMessage' data-testid="errorMessage">No movie was found with this title - please check the spelling or submit another movie.</h4>
                 :<></>
             }
           </div>

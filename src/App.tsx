@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className="App">
-      <h1 className='topHeader'>OMDB API Project</h1>
+      <h1 className="topHeader" data-testid="topHeader">OMDB API Project</h1>
       <APIComponent/>
     </div>
   );
