@@ -3,7 +3,7 @@ import { Carousel, Image } from "react-bootstrap";
 
 const ImageCarouselComponent  = () => {
   return (
-    <Carousel fade controls={false} indicators={false}>
+    <Carousel data-testid="mainImageCarousel" fade controls={false} indicators={false}>
                 <Carousel.Item interval={750}>
                     <Image className="moviePoster" src="https://m.media-amazon.com/images/M/MV5BMjM2MDgxMDg0Nl5BMl5BanBnXkFtZTgwNTM2OTM5NDE@._V1_SX300.jpg" alt="Jurassic Park" fluid/>
                 </Carousel.Item>
