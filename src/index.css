@@ -13,14 +13,14 @@ code {
 }
 
 .App{
-  background-color: #00000e;
-  padding: 25px 0 50px 0;
+  background-color: #f0f0f0;
+  padding: 15px 0 50px 0;
   min-height: 100vh;
 }
 
 
 .mainContainer{
-  background-color: #1e1e1e;
+  background-color: #ffffff;
   max-width: 80.4vw;
   box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
                 0 2px 4px rgba(0,0,0,0.07), 
@@ -29,15 +29,16 @@ code {
                 0 16px 32px rgba(0,0,0,0.07), 
                 0 32px 64px rgba(0,0,0,0.07);
   min-height: 85vh;
+  padding-top: 22px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .movieCard{
-  padding: 10px 10px 35px 10px;
-  width: 84%;
+  padding: 35px 10px 35px 10px;
+  width: 94.5%;
   margin: 0 auto;
   text-align: center;
-  color: white;
+  color: #00000e;
   box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
                 0 2px 4px rgba(0,0,0,0.07), 
                 0 4px 8px rgba(0,0,0,0.07), 
@@ -46,16 +47,21 @@ code {
                 0 32px 64px rgba(0,0,0,0.07);
 }
 
+@media only screen and (max-width: 480px){
+  .movieCard{
+    padding: 25px 25px 25px 25px;
+  }
+}
+
 .articleHeader{
   text-align: center;
-  background-color: #260909;
-  color: white;
+  color: black;
   padding: 5px 15px 5px 15px;
-  background-color: #1e1e1e;
+  background-color: #ffffff;
 }
 
 .moviePoster{
-  margin: 35px 0 25px 0;
+  margin: 35px 0 35px 0;
   width: 35%;
 }
 
@@ -71,11 +77,11 @@ code {
 }
 
 .errorMessage{
-  color: white;
+  color: #00000e;
 }
 
 .topHeader{
-  color: white;
+  color: #00000e;
   margin-bottom: 25px;
 }
 
@@ -86,6 +92,12 @@ code {
 .form-control{
   width: 50% !important;
   margin: 0 auto;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07);
 }
 
 .formContainer{

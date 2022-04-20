@@ -1,5 +1,5 @@
 import React, {useState, FC} from 'react'
-import { Form, Button, Container, Image, Carousel } from "react-bootstrap";
+import { Form, Button, Container } from "react-bootstrap";
 import { useForm, SubmitHandler } from "react-hook-form";
 import ArticleComponent from './ArticleComponent';
 import ImageCarouselComponent from './ImageCarouselComponent';
@@ -45,11 +45,10 @@ const APIComponent: FC = () => {
     }))
   }
 
-  console.log(movieData);
-
   return (
     <div>
         <div className="formContainer">
+        <h1 className="topHeader" data-testid="topHeader">OMDB API Project</h1>
         <Form data-testid="mainForm" onSubmit={handleSubmit(onSubmit)}>
             <Form.Group className="mb-3" controlId="topic">
               <Form.Control
@@ -94,7 +93,6 @@ const APIComponent: FC = () => {
                 Response={movieData.Response}
              />
               : <div>
-                  <br />
               </div>
               }
             {movieData !== null &&  movieData.Title ===  undefined?
