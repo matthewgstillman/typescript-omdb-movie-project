@@ -1,5 +1,5 @@
 # Getting Started with Create React App'
-#OMDB API Project
+# OMDB API Project
 
 This document will go over some of the components used in this React project that allow you to search for information about your favorite movies and television shows.
 
