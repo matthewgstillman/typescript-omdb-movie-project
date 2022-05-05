@@ -35,8 +35,8 @@ const ArticleComponent: FC<MovieArticle> = (
         </div>
         <Image className='moviePoster' src={Poster} alt="movie poster image" data-testid="moviePosterImage" fluid/>
         <div className="movieCard" data-testid="movieCard">
-           <div className="movieContainerData">
            <p className="plotParagraph" data-testid="plotParagraph">{Plot}</p>
+           <div className="movieContainerData">
               <h6 data-testid="genreHeader"><b>Genre:</b> {Genre}</h6>
               <h6 data-testid="directorHeader"><b>Director:</b> {Director}</h6>
               <h6 data-testid="writerHeader"><b>Writer(s):</b> {Writer}</h6>

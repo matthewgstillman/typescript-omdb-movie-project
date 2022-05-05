@@ -57,7 +57,7 @@ const APIComponent: FC = () => {
                 {...register("movieTitle")}
               />
             </Form.Group>
-            <Button onClick={() => getMovie} data-testid="submitButton" variant="primary" type="submit">
+            <Button onClick={() => getMovie} data-testid="submitButton" variant="dark" type="submit" className='submitButton'>
             Get Movie Data
             </Button>
           </Form>
