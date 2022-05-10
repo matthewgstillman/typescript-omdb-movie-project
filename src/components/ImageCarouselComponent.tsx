@@ -8,9 +8,6 @@ const ImageCarouselComponent  = () => {
                     <Image className="moviePoster" src="https://m.media-amazon.com/images/M/MV5BMjM2MDgxMDg0Nl5BMl5BanBnXkFtZTgwNTM2OTM5NDE@._V1_SX300.jpg" alt="Jurassic Park" fluid/>
                 </Carousel.Item>
                 <Carousel.Item interval={750}>
-                    <Image className="moviePoster" src="https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg" alt="Star Wars"  fluid/>
-                </Carousel.Item>
-                <Carousel.Item interval={750}>
                     <Image className="moviePoster" src="https://m.media-amazon.com/images/M/MV5BY2NkZjEzMDgtN2RjYy00YzM1LWI4ZmQtMjIwYjFjNmI3ZGEwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg" alt="Goodfellas" fluid/>
                 </Carousel.Item>
                 <Carousel.Item interval={750}>

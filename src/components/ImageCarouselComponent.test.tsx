@@ -29,7 +29,6 @@ const mockMovieData = {
 
 const posterUrls = {
     jurassicPark: "https://m.media-amazon.com/images/M/MV5BMjM2MDgxMDg0Nl5BMl5BanBnXkFtZTgwNTM2OTM5NDE@._V1_SX300.jpg",
-    starWars: "https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
     goodfellas: "https://m.media-amazon.com/images/M/MV5BY2NkZjEzMDgtN2RjYy00YzM1LWI4ZmQtMjIwYjFjNmI3ZGEwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
     rocky: "https://m.media-amazon.com/images/M/MV5BNTBkMjg2MjYtYTZjOS00ODQ0LTg0MDEtM2FiNmJmOGU1NGEwXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg",
     toyStory: "https://m.media-amazon.com/images/M/MV5BMDU2ZWJlMjktMTRhMy00ZTA5LWEzNDgtYmNmZTEwZTViZWJkXkEyXkFqcGdeQXVyNDQ2OTk4MzI@._V1_SX300.jpg",
@@ -52,15 +51,6 @@ test("Jurassic Park in document", () => {
     expect(jurassicParkElement).toHaveAttribute(
         "src",
         posterUrls.jurassicPark
-      );
-  });
-
-  test("Star Wars in document", () => {
-    render(<ImageCarouselComponent/>);
-    const starWarsElement = screen.getByAltText("Star Wars");
-    expect(starWarsElement).toHaveAttribute(
-        "src",
-        posterUrls.starWars
       );
   });
 
