@@ -38,7 +38,7 @@ const posterUrls = {
     scarFace: "https://m.media-amazon.com/images/M/MV5BNjdjNGQ4NDEtNTEwYS00MTgxLTliYzQtYzE2ZDRiZjFhZmNlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
     dumbAndDumber: "https://m.media-amazon.com/images/M/MV5BZDQwMjNiMTQtY2UwYy00NjhiLTk0ZWEtZWM5ZWMzNGFjNTVkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
 }
-
+s
 test("Main Image Carousel in document", () => {
     render(<ImageCarouselComponent/>);
     const mainImageCarouselElement = screen.getByTestId("mainImageCarousel");
@@ -126,3 +126,4 @@ test("Jurassic Park in document", () => {
         posterUrls.dumbAndDumber
       );
   });
+  
