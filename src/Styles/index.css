@@ -160,7 +160,7 @@ code {
   50% {
     background-position: 400% 0;
   }
-  100% {
+  0% {
     background-position: 0 0;
   }
 }
@@ -172,7 +172,7 @@ code {
   50% {
     background-position: 400% 0;
   }
-  100% {
+  0% {
     background-position: 0 0;
   }
 }/*# sourceMappingURL=index.css.map */
