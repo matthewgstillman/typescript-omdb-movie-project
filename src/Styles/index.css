@@ -53,6 +53,10 @@ code {
 .moviePoster {
   margin: 35px 0 35px 0;
   width: 35%;
+  transition: 0.3s ease-in-out;
+}
+.moviePoster:hover {
+  width: 39%;
 }
 
 .movieYearAndRunTimeHeader {

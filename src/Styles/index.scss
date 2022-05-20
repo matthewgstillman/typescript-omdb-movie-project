@@ -67,6 +67,12 @@ code {
 .moviePoster{
   margin: 35px 0 35px 0;
   width: 35%;
+  -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+
+  &:hover{
+    width: 39%;
+  }
 }
 
 
