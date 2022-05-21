@@ -1,4 +1,4 @@
-import React, {useState, FC} from "react";
+import React, { FC } from "react";
 import './App.css';
 import APIComponent from './components/APIComponent';
 import 'bootstrap/dist/css/bootstrap.min.css';
