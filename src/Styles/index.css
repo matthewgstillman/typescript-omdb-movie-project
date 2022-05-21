@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800,300italic,400italic,600italic,700italic,800italic);
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -30,7 +32,7 @@ code {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
   min-height: 85vh;
   padding-top: 22px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans";
 }
 
 .movieCard {
@@ -53,10 +55,6 @@ code {
 }
 .moviePoster:hover {
   width: 39%;
-}
-
-.movieYearAndRunTimeHeader {
-  color: white;
 }
 
 .errorMessage {
@@ -85,7 +83,6 @@ code {
 .plotParagraph {
   width: 86.4%;
   margin: 0 auto;
-  padding-bottom: 25px;
 }
 
 .submitButton {
@@ -100,67 +97,7 @@ code {
   z-index: 0;
   border-radius: 10px;
 }
-.submitButton:before {
-  content: "";
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  -webkit-animation: glowing 20s linear infinite;
-          animation: glowing 20s linear infinite;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
-}
-.submitButton:active {
-  color: #000;
-}
-.submitButton:active:after {
-  background: transparent;
-}
-.submitButton:hover:before {
-  opacity: 1;
-}
-.submitButton :after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #111;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
-}
 
-@-webkit-keyframes glowing {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  0% {
-    background-position: 0 0;
-  }
-}
-
-@keyframes glowing {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  0% {
-    background-position: 0 0;
-  }
-}
 @media only screen and (max-width: 480px) {
   .mainContainer {
     max-width: 100vw;
