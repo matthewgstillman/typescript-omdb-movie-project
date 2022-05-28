@@ -47,8 +47,14 @@ const APIComponent: FC = () => {
 
   return (
     <div>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12 text-center">
+              <h3 className="animate-charcter" data-testid="topHeader">OMDB API Project</h3>
+            </div>
+          </div>
+        </div>
         <div className="formContainer">
-        <h1 className="topHeader" data-testid="topHeader">OMDB API Project</h1>
         <Form data-testid="mainForm" onSubmit={handleSubmit(onSubmit)}>
             <Form.Group className="mb-3" controlId="topic">
               <Form.Control
